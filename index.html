@@ -5,13 +5,22 @@
 
   <title>HackSRM</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1.0,target-densityDpi=device-dpi">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+  html, body {
+    padding: 0;
+    marging: 0;
+    width: 100%;
+
+  }
     body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
@@ -20,7 +29,6 @@
 
     h2 {
       font-size: 24px;
-      text-transform: uppercase;
       color: #303030;
       font-weight: 600;
       margin-bottom: 30px;
@@ -43,14 +51,17 @@
   }
 
   .jumbotron {
-      background-image: url("index.jpg");
-       -webkit-filter: grayscale(50%);
-         filter: grayscale(50%);
-          background-size: cover;
-      color: #fff;
-      min-height: 900px;
-      font-family: Montserrat, sans-serif;
-  }
+    width: 100%;
+    height: 970px;
+    color: #fff;
+    background-size: 400% 400%;
+    background: transparent!important;
+    position: absolute;
+    top: 0px;
+    pointer-events: none
+
+
+}
 
   .jumbotron h5 {
     font-size: 72px;
@@ -67,14 +78,49 @@
       background-color: #f6f6f6;
   }
 
-  .logo-small {
-      color: #181818;
-      font-size: 50px;
-  }
+
+  .btn {
+    color: #fff;
+    background-color: #5cb85c00;
+    border-color: #ffffff80;
+    display: inline-block;
+    padding: 20px 100px;
+    margin-bottom: 0;
+    border-radius: 0 !important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    position: absolute;
+    top: 80%;
+    margin: auto;
+    left: 42%;
+    display: inline-block;
+}
+.btn:hover {
+      color: #000!important;
+      border: none !important;
+      border-radius: 0;
+      animation: 1s ease;
+      padding: 25px 110px;
+      background-color: #ffffff !important;
+
+}
 
   .logo {
-      color: #181818;
-      font-size: 200px;
+    height: 300px;
+    width: auto;
+    margin-top: 5%;
   }
 
   .thumbnail {
@@ -125,9 +171,9 @@
   }
 
   .panel-footer .btn:hover {
-      border: 1px solid #181818;
-      background-color: #fff !important;
-      color: #181818;
+      color: #fff;
+      background-color: #000 !important;
+
   }
 
   .panel-heading {
@@ -162,7 +208,7 @@
 
   .navbar {
       margin-bottom: 0;
-      background-color: #181818;
+      background-color: #000000bf;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -204,6 +250,50 @@
       visibility: visible;
   }
 
+  #particles-js {
+    background: linear-gradient(-45deg, #31130a, #330b1b, #0b242d, #0a4c3d);
+        background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    min-height: 970px;
+  }
+  @-webkit-keyframes Gradient {
+  	0% {
+  		background-position: 0% 50%
+  	}
+  	50% {
+  		background-position: 100% 50%
+  	}
+  	100% {
+  		background-position: 0% 50%
+  	}
+  }
+
+  @-moz-keyframes Gradient {
+  	0% {
+  		background-position: 0% 50%
+  	}
+  	50% {
+  		background-position: 100% 50%
+  	}
+  	100% {
+  		background-position: 0% 50%
+  	}
+  }
+
+  @keyframes Gradient {
+  	0% {
+  		background-position: 0% 50%
+  	}
+  	50% {
+  		background-position: 100% 50%
+  	}
+  	100% {
+  		background-position: 0% 50%
+  	}
+  }
+
   @keyframes slide {
     0% {
       opacity: 0;
@@ -238,14 +328,58 @@
   }
 
   @media screen and (max-width: 480px) {
+
+
+
     .logo {
         font-size: 150px;
     }
-  }
+}
+@media only screen and (max-width: 600px) {
+ html, body{
+     overflow-x: hidden;
+     margin: 0;
+     padding: 0;
+   }
+    #particles-js {
+      display: none;
+      }
+      .logo {
+          height: 200px;
+          width: auto;
+          margin-top: 10%;
+        }
+        h2, h3, h4, h5 {
+          font-size: 20px;
+        }
+   .btn {
+
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    width: 90%;
+    margin: 5%;
+    left:0;
+   }
+    .jumbotron {
+      background: linear-gradient(-45deg, #31130a, #330b1b, #0b242d, #0a4c3d) !important;
+      -webkit-animation: Gradient 15s ease infinite;
+      -moz-animation: Gradient 15s ease infinite;
+      animation: Gradient 15s ease infinite;
+      position: relative;
+      height: 800px;
+
+
+    }
+
+
+
+
+}
   </style>
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" >
   <nav class="navbar navbar-default navbar-fixed-top">
 
     <div class="container">
@@ -262,19 +396,19 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#about">ABOUT</a></li>
           <!--<li><a href="#FAQs">FAQs</a></li>-->
-          <li><a href="#ORGANIZERS">ORGANIZERS</a></li>
           <li><a href="#SPONSORS">SPONSORS</a></li>
+          <li><a href="#ORGANIZERS">ORGANIZERS</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
     </div>
   </nav>
+  <div id="particles-js"></div>
 
   <div class="jumbotron text-center">
-    <br>
-    <br>
-    <h5>HackSRM</h5>
-    <br>
+
+<img src="assets/images/logo.png" class="logo"/>
+ <br>
     <p>
       <h3>INNOVATE | HACK | WIN</h3>
     </p>
@@ -285,11 +419,12 @@
     <p>
       <h3>Registrations start on October 1, 2018</h3>
 
-      <a href="https://www.hackerearth.com/"><button type="button" class="btn btn-success BTN-LG">REGISTER NOW</button></a>
+
   </div>
+  <center><a href="https://www.hackerearth.com/" style="text-decoration: none; color: inherit"><button type="button" class="btn btn-success BTN-LG"> REGISTER NOW</button></center></a></center>
 
   <!-- Container (About Section) -->
-  <div id="about" class="container-fluid bg-grey">
+  <div id="about" class="container-fluid bg-white">
     <div class="row">
       <div class="col-sm-8">
         <h2>About HackSRM </h2>
@@ -308,7 +443,7 @@
           exciting goodies, you are destined to have a mindful of pure genius. If this is
           your first ever hackathon, we will make sure you have an enriching and memorable
           experience that you will cherish for days to come.
-        </h4>
+        </h4>   
         <h4> So join us on this path of epicness! </h4>
 
         <!--<h2>About The Organisers</h2>
@@ -316,7 +451,63 @@
       </div>
     </div>
   </div>
+  <div id="SPONSORS" class="container-fluid">
+      <div class="text-center">
+        <h2 style="font-size: 50  px">SPONSORS</h2>
+        <div class="row text-center slideanim">
+          <div class="col-sm-4">
+            <div class="thumbnail">.
 
+              <a href = "http://wolfram.com/"><img src="wolfram.png" alt="Paris" width="400" height="300"></a>
+              <p><strong>wolfram</strong></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <a href="https://www.jetbrains.com"><img src="jetbrains.png" alt="Paris" style = "height : 200px ; width : auto"></a>
+              <p><strong>Jetbrains</strong></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <a href="https://nimblebox.ai/"><img src="nimblebox.png" alt="Paris" width="400" height="300"></a>
+              <p><strong>NimbleBox.ai</strong></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="SPONSORS" class="container-fluid">
+      <div class="text-center">
+        <h2></h2>
+        <div class="row text-center slideanim">
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <a href="https://www.hackerearth.com/challenges/"><img src="sp1.png" alt="Paris" width="400" height="300"></a>  
+              <p><strong>HackerEarth</strong></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="" alt="" style = "height : 200px ; width : auto">
+              <p><strong></strong></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="" alt="" width="400" height="300">
+              <p><strong></strong></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   <!-- Container (ORGANIZERS Section) -->
   <div id="ORGANIZERS" class="container-fluid text-center ">
     <h2>About The Organizers</h2><br>
@@ -335,14 +526,14 @@
       <div class="col-sm-2"> </div>
       <div class="col-sm-2">
         <div class="thumbnail">
-          <img src="srml.png" alt="NTL AP">
+          <img src="srml.png" alt="NTL AP" style="height : 200 ; width : auto">
           <p><strong>SRM University AP</strong></p>
         </div>
       </div>
       <div class="col-sm-2"> </div>
       <div class="col-sm-2"> </div>
       <div class="col-sm-2">
-        <div class="thumbnail">
+        <div class="thumbnail"> 
           <img src="ntl.png" alt="NTL AP">
           <p><strong>Next Tech Lab</strong></p>
         </div>
@@ -528,35 +719,8 @@
     </div>
 
 
-    <!-- Container (SPONSORS Section) -->
-    <div id="SPONSORS" class="container-fluid">
-      <div class="text-center">
-        <h2>SPONSORS</h2>
-        <div class="row text-center slideanim">
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              <img src="sp1.png" alt="Paris" width="400" height="300">
-              <p><strong>HackerEarth</strong></p>
-              <p></p>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              <img src="" alt="" width="400" height="300">
-              <p><strong></strong></p>
-              <p></p>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              <img src="" alt="" width="400" height="300">
-              <p><strong></strong></p>
-              <p></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+
 
     <!-- Container (Contact Section) -->
     <div id="contact" class="container-fluid bg-grey">
@@ -662,5 +826,6 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
     </script>
 
 </body>
-
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/app.js"></script>
 </html>
