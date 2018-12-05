@@ -341,7 +341,9 @@ footer .glyphicon {
 }
 
 /* ---- particles.js container ---- */
-
+#demo-canvas {
+  opacity: 0.7;
+}
 .large-header {
   position: absolute;
   width: 100%;
