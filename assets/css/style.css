@@ -342,6 +342,7 @@ footer .glyphicon {
   opacity: 0.4;
 }
   canvas {
+  opacity: 0.4;
   display: block;
   vertical-align: bottom;
 }
