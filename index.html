@@ -8,382 +8,28 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126732353-1"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
 
-    gtag('config', 'UA-126732353-1');
+  gtag('config', 'UA-126732353-1');
   </script>
 
   <link rel="icon" type="image/png" href="favicon.png">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1.0,target-densityDpi=device-dpi">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="HackSRM 2018" />
+  <meta property="og:description" content="HackSRM is a premium student led national level hackathon held in India that aims to gather the great student minds under one roof and solve potential real world problem through technology under 36 hours. " />
+  <meta name="keywords" content="HackSRM, Hackathon, SRM, SRM AP, Hackathon India, UC Berkeley, MIT, Next Tech, IGDC">
+  <meta property="og:url" content="http://hacksrm.github.io" />
+  <meta property="og:image" content="assets/images/cover-1.png" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    html, body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
-  }
-    body {
-      font-display: auto;
-      font: 400 15px Lato, sans-serif;
-      line-height: 1.8;
-      color: #818181;
-    }
-
-    h2 {
-      font-size: 24px;
-      color: #303030;
-      font-weight: 600;
-      margin-bottom: 30px;
-    }
-
-    h3 {
-      font-size: 36px;
-      text-transform: uppercase;
-      color: #fff;
-      font-weight: 600;
-      margin-bottom: 30px;
-    }
-
-  h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      color: #303030;
-      font-weight: 400;
-      margin-bottom: 30px;
-  }
-
-  .jumbotron {
-    width: 100%;
-    height: 970px;
-    color: #fff;
-    background-size: 400% 400%;
-    background: transparent!important;
-    position: absolute;
-    top: 0px;
-    pointer-events: none
-
-
-}
-
-  .jumbotron h5 {
-    font-size: 72px;
-    font-display: auto;
-    font-family: Montserrat, sans-serif;
-    margin-top: 20%;
-    font-weight: 700;
-  }
-
-  .container-fluid {
-      padding: 60px 50px;
-  }
-
-  .bg-grey {
-      background-color: #f6f6f6;
-  }
-
-
-  .btn {
-    color: #fff;
-    background-color: #5cb85c00;
-    border-color: #ffffff80;
-    display: inline-block;
-    padding: 20px 100px;
-    margin-bottom: 0;
-    border-radius: 0 !important;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    position: absolute;
-    top: 85%;
-    margin: auto;
-    left: 42%;
-    display: inline-block;
-}
-.btn:hover {
-      color: #000!important;
-      border: none !important;
-      border-radius: 0;
-      animation: 1s ease;
-      padding: 25px 110px;
-      background-color: #ffffff !important;
-
-}
-
-  .logo {
-    height: 300px;
-    width: auto;
-    margin-top: 5%;
-  }
-
-  .thumbnail {
-      padding: 0 0 15px 0;
-      border: none;
-      border-radius: 0;
-  }
-
-  .thumbnail img {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 10px;
-  }
-
-  .carousel-control.right, .carousel-control.left {
-      background-image: none;
-      color: #181818;
-  }
-
-  .carousel-indicators li {
-      border-color: #181818;
-  }
-
-  .carousel-indicators li.active {
-      background-color: #181818;
-  }
-
-  .item h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      font-weight: 400;
-      font-style: italic;
-      margin: 70px 0;
-  }
-
-  .item span {
-      font-style: normal;
-  }
-
-  .panel {
-      border: 1px solid #181818;
-      border-radius:0 !important;
-      transition: box-shadow 0.5s;
-  }
-
-  .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-
-  .panel-footer .btn:hover {
-      color: #fff;
-      background-color: #000 !important;
-
-  }
-
-  .panel-heading {
-      color: #fff !important;
-      background-color: #181818 !important;
-      padding: 25px;
-      border-bottom: 1px solid transparent;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-  }
-
-  .panel-footer {
-      background-color: white !important;
-  }
-
-  .panel-footer h3 {
-      font-size: 32px;
-  }
-
-  .panel-footer h4 {
-      color: #aaa;
-      font-size: 14px;
-  }
-
-  .panel-footer .btn {
-      margin: 15px 0;
-      background-color: #181818;
-      color: #fff;
-  }
-
-  .navbar {
-      margin-bottom: 0;
-      background-color: #000000bf;
-      z-index: 9999;
-      border: 0;
-      font-size: 12px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 4px;
-      border-radius: 0;
-      font-family: Montserrat, sans-serif;
-  }
-
-  .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
-  }
-
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #181818 !important;
-      background-color: #fff !important;
-  }
-
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: #fff !important;
-  }
-
-  footer .glyphicon {
-      font-size: 20px;
-      margin-bottom: 20px;
-      color: #181818;
-  }
-
-  .slideanim {
-    visibility:hidden;
-  }
-
-  .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-
-  #particles-js {
-    background: linear-gradient(-45deg, #31130a, #330b1b, #0b242d, #0a4c3d);
-        background-size: 400% 400%;
-    -webkit-animation: Gradient 15s ease infinite;
-    -moz-animation: Gradient 15s ease infinite;
-    animation: Gradient 15s ease infinite;
-    min-height: 970px;
-  }
-  @-webkit-keyframes Gradient {
-  	0% {
-  		background-position: 0% 50%
-  	}
-  	50% {
-  		background-position: 100% 50%
-  	}
-  	100% {
-  		background-position: 0% 50%
-  	}
-  }
-
-  @-moz-keyframes Gradient {
-  	0% {
-  		background-position: 0% 50%
-  	}
-  	50% {
-  		background-position: 100% 50%
-  	}
-  	100% {
-  		background-position: 0% 50%
-  	}
-  }
-
-  @keyframes Gradient {
-  	0% {
-  		background-position: 0% 50%
-  	}
-  	50% {
-  		background-position: 100% 50%
-  	}
-  	100% {
-  		background-position: 0% 50%
-  	}
-  }
-
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-
-  @media screen and (max-width: 268px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-
-
-
-    .logo {
-        font-size: 150px;
-    }
-}
-@media only screen and (max-width: 600px) {
- html, body{
-     overflow-x: hidden;
-     margin: 0;
-     padding: 0;
-   }
-    #particles-js {
-      display: none;
-      }
-      .logo {
-          height: 200px;
-          width: auto;
-          margin-top: 10%;
-        }
-        h2, h3, h4, h5 {
-          font-size: 20px;
-        }
-   .btn {
-
-    text-align: center;
-    display: inline-block;
-    position: absolute;
-    width: 90%;
-    margin: 5%;
-    left:0;
-   }
-    .jumbotron {
-      background: linear-gradient(-45deg, #31130a, #330b1b, #0b242d, #0a4c3d) !important;
-      -webkit-animation: Gradient 15s ease infinite;
-      -moz-animation: Gradient 15s ease infinite;
-      animation: Gradient 15s ease infinite;
-      position: relative;
-      height: 800px;
-
-
-    }
-}
-  </style>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar">
@@ -409,253 +55,236 @@
       </div>
     </div>
   </nav>
-  <div id="particles-js"></div>
+  <!-- ParticlesJs -->
+  <div id="large-header" class="large-header">
+    <canvas id="demo-canvas" ></canvas>
+  </div>  <div class="jumbotron text-center">
 
-  <div class="jumbotron text-center">
-
-    <img src="assets/images/logo.png" class="logo" />
+    <img src="assets/images/logo.png" class="logo"/>
     <br>
     <p>
-      <h3>INNOVATE | HACK | WIN</h3>
+      <h3>KICKSTART | HACK | LEAD</h3>
     </p>
     <p>
-      <h3> February 2019| SRM AMARAVATI | NEXT TECH LAB AP<h3>
-    </p>
-    <br>
-    <p>
-      <h3>Registrations starting soon</h3>
+      <h3>December 2018 | SRM AMARAVATI | NEXT TECH LAB AP<h3>
+      </p>
+      <br>
+      <p>
+        <!-- <h3>Registrations start on October 1, 2018</h3> -->
 
+        <center><a href="https://www.hackerearth.com/" style="text-decoration: none; color: inherit"><button type="button" class="btn btn-success BTN-LG"> REGISTER NOW</button></center></a></center>
 
-  </div>
-  <center><a href="https://www.hackerearth.com/" style="text-decoration: none; color: inherit">
-      <button type="button" class="btn btn-success BTN-LG"> REGISTER NOW</button></center></a></center>
-
-  <!-- Container (About Section) -->
-  <div id="about" class="container-fluid bg-white">
-    <div class="row">
-      <div class="col-sm-8">
-        <h2>About HackSRM </h2>
-        <h4>Welcome to HackSRM! HackSRM is a premium student-led hackathon with participants all
-          across the country. This aims to bring together some of the smartest students under one
-          roof to provide technical solutions to potential real-world problems.
-          HackSRM is a highly competitive hackathon and is meant for students who have flair for
-          technology and believe in doing social good, but wait, under 24 hours.
-          HackSRM aims to be a great platform for (smart) young minds to showcase their potential,
-          and do their bit help build a greater tomorrow. Come, join us for our first technical
-          extravaganza with well-known guest speakers, great internship opportunities, attend
-          workshops, an option to network with like-minded people and learn, and of course, some
-          great hacks to show in the end.
-        </h4>
-
-        <h2>Why HackSRM </h2>
-        <h4>The winner gets a cash prize of ₹ 1,00,000. There are exciting prizes for runners-up
-          and special sponsor company prizes to be won. If this is your first hackathon, we’ll
-          ensure this would be a great learning experience.
-          The hackathon is free to attend and open to all students currently enrolled in a
-          technical undergraduate course.
-          With exciting goodies to take back, you are destined to have mindful of a pure genius.
-          Amazing food to keep the mind working well, is on us. 24 hours of absolute madness, we
-          assure you an enriching and memorable experience at HackSRM.
-        </h4>
-        <h4> So join us on this path of epicness! </h4>
       </div>
-    </div>
-  </div>
-  <div id="SPONSORS" class="container-fluid">
-    <div class="text-center">
-      <h2 style="font-size: 50  px">SPONSORS</h2>
-      <div class="row text-center slideanim">
-        <div class="col-sm-4">
-          <div class="thumbnail">.
-            <a href="http://wolfram.com/"><img src="assets/images/sponsors/wolfram.png" alt="Wolfram"
-                   width="400" height="300"></a>
-            <p><strong>Wolfram</strong></p>
-            <p></p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="thumbnail">
-            <a href="https://www.jetbrains.com"><img src="assets/images/sponsors/jetbrains.png" alt="JetBrains"
-                   style="height : 200px ; width : auto"></a>
-            <p><strong>JetBrains</strong></p>
-            <p></p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="thumbnail">
-            <a href="https://nimblebox.ai/">
-              <img src="assets/images/sponsors/nimblebox.png" alt="NimbleBox.ai" width="400" height="300"></a>
-            <p><strong>NimbleBox.ai</strong></p>
-            <p></p>
+
+
+      <!-- Container (About Section) -->
+      <div id="about" class="container-fluid bg-white">
+        <div class="row">
+          <div class="col-sm-8">
+            <h2>About HackSRM </h2>
+            <h4>Welcome to HackSRM! HackSRM is a premium student led national level hackathon held in
+              India that aims to gather the great student minds under one roof and solve potential
+              real world problem through technology under 36 hours. We belong to the technological
+              hub of the country where marvels of innovation and creativity have always been
+              celebrated, HackSRM is one such celebration. HackSRM is a platform for young geniuses
+              to not only exercise their skills to the topmost level but also to build a better
+              tomorrow by ideating, constructing and innovating vast solutions.
+            </h4>
+
+            <h2>Why HackSRM </h2>
+            <h4>HackSRM is the perfect blend of imagination, novelty and fun. The 36 hour non-stop
+              technical festival will host an amazing panel of speakers, sponsors and swag ;). With
+              exciting goodies, you are destined to have a mindful of pure genius. If this is
+              your first ever hackathon, we will make sure you have an enriching and memorable
+              experience that you will cherish for days to come.
+            </h4>
+            <h4> So join us on this path of epicness! </h4>
+
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div id="SPONSORS" class="container-fluid">
-    <div class="text-center">
-      <h2></h2>
-      <div class="row text-center slideanim">
-        <div class="col-sm-4">
-          <div class="thumbnail">
-            <a href="https://www.hackerearth.com/challenges/">
-              <img src="assets/images/sponsors/hackerearth.png" alt="HackerEarth" width="400"
-                   height="300"></a>
-            <p><strong>HackerEarth</strong></p>
-            <p></p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="thumbnail">
-            <a href="https://get.tech/">
-              <img src="assets/images/sponsors/techdom.png" alt=".tech Domains" style="height : 150px ; width : auto"></a>
-            <p><strong>.tech Domains</strong></p>
-            <p></p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="thumbnail">
-            <img src="" alt="" width="400" height="300">
-            <p><strong></strong></p>
-            <p></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Container (ORGANIZERS Section) -->
-  <div id="ORGANIZERS" class="container-fluid text-center ">
-    <h2>About The Organizers</h2><br>
-    <h4>Organized by the students who have consistently conquered national and international
-      hackathons like HackMIT, HackIIITD, Hack Harvard, Playscape@Berkeley, HINT, IGDC by Kamk
-      University, Robotics Challenge at IIT Roorkee and countless more, are putting the
-      ingredients together to conduct this one of its kind event. Institutes like QS Silver
-      Awardee, Next Tech Lab, the ACM Student Chapter and Ennovab: Entrepreneurial Innovation Lab,
-      powered by SCET, University of California, Berkeley are also actively involved to
-      realize the largest hackathon in the country.
-    </h4>
+      <div id="SPONSORS" class="container-fluid">
+        <div class="text-center">
+          <h2 style="font-size: 50  px">SPONSORS</h2>
+          <div class="row text-center slideanim">
+            <div class="col-sm-4">
+              <div class="thumbnail">.
+                <a href="http://wolfram.com/"><img src="assets/images/sponsors/wolfram.png" alt="Wolfram"
+                  width="400" height="300"></a>
+                  <p><strong>Wolfram</strong></p>
+                  <p></p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="thumbnail">
+                  <a href="https://www.jetbrains.com"><img src="assets/images/sponsors/jetbrains.png" alt="JetBrains"
+                    style="height : 200px ; width : auto"></a>
+                    <p><strong>JetBrains</strong></p>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="thumbnail">
+                    <a href="https://nimblebox.ai/">
+                      <img src="assets/images/sponsors/nimblebox.png" alt="NimbleBox.ai" width="400" height="300"></a>
+                      <p><strong>NimbleBox.ai</strong></p>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="SPONSORS" class="container-fluid">
+              <div class="text-center">
+                <h2></h2>
+                <div class="row text-center slideanim">
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <a href="https://www.hackerearth.com/challenges/">
+                        <img src="assets/images/sponsors/hackerearth.png" alt="HackerEarth" width="400"
+                        height="300"></a>
+                        <p><strong>HackerEarth</strong></p>
+                        <p></p>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumbnail">
+                        <img src="" alt="" style="height : 200px ; width : auto">
+                        <p><strong></strong></p>
+                        <p></p>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumbnail">
+                        <img src="" alt="" width="400" height="300">
+                        <p><strong></strong></p>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Container (ORGANIZERS Section) -->
+              <div id="ORGANIZERS" class="container-fluid text-center ">
+                <h2>About The Organizers</h2><br>
+                <h4>Organized by the students who have consistently conquered national and international
+                  hackathons like HackMIT, HackIIITD, Hack Harvard, Playscape@Berkeley, HINT, IGDC by Kamk
+                  University, Robotics Challenge at IIT Roorkee and countless more, are putting the
+                  ingredients together to conduct this one of its kind event. Institutes like QS Silver
+                  Awardee, Next Tech Lab, the ACM Student Chapter and Ennovab: Entrepreneurial Innovation Lab,
+                  powered by SCET, University of California, Berkeley are also actively involved to
+                  realize the largest hackathon in the country.
+                </h4>
 
 
-    <h2>Organized By </h2><br>
-    <div class="row text-center slideanim">
-      <div class="col-sm-2"> </div>
-      <div class="col-sm-2">
-        <div class="thumbnail">
-          <img src="assets/images/srml.png" alt="SRM University, AP" style="height : 200 ; width : auto">
-          <p><strong>SRM University AP</strong></p>
-        </div>
-      </div>
-      <div class="col-sm-2"> </div>
-      <div class="col-sm-2"> </div>
-      <div class="col-sm-2">
-        <div class="thumbnail">
-          <img src="assets/images/ntl.png" alt="Next Tech Lab AP">
-          <p><strong>Next Tech Lab</strong></p>
-        </div>
-      </div>
-    </div>
+                <h2>Organized By </h2><br>
+                <div class="row text-center slideanim">
+                  <div class="col-sm-2"> </div>
+                  <div class="col-sm-2">
+                    <div class="thumbnail">
+                      <img src="assets/images/srml.png" alt="SRM University, AP" style="height : 200 ; width : auto">
+                      <p><strong>SRM University AP</strong></p>
+                    </div>
+                  </div>
+                  <div class="col-sm-2"> </div>
+                  <div class="col-sm-2"> </div>
+                  <div class="col-sm-2">
+                    <div class="thumbnail">
+                      <img src="assets/images/ntl.png" alt="Next Tech Lab AP">
+                      <p><strong>Next Tech Lab</strong></p>
+                    </div>
+                  </div>
+                </div>
 
-    <h2>In Association With</h2><br>
-    <div class="row text-center slideanim">
-      <div class="col-sm-2">
-        <div class="thumbnail">
-          <img src="assets/images/ennov.jpeg" alt="Ennovab: Entrepreneurial Innovation Lab">
-          <p><strong>Ennovab: Entrepreneurial Innovation Lab</strong></p>
-        </div>
-      </div>
-      <div class="col-sm-1"></div>
+                <h2>In Association With</h2><br>
+                <div class="row text-center slideanim">
+                  <div class="col-sm-2">
+                    <div class="thumbnail">
+                      <img src="assets/images/ennov.jpeg" alt="Ennovab: Entrepreneurial Innovation Lab">
+                      <p><strong>Ennovab: Entrepreneurial Innovation Lab</strong></p>
+                    </div>
+                  </div>
+                  <div class="col-sm-1"></div>
 
-      <div class="col-sm-2">
-        <div class="thumbnail">
-          <img src="assets/images/acm.png" alt="SRM University AP ACM Student Chapter">
-          <p><strong>SRM University AP ACM Student Chapter</strong></p>
-        </div>
-      </div>
+                  <div class="col-sm-2">
+                    <div class="thumbnail">
+                      <img src="assets/images/acm.png" alt="SRM University AP ACM Student Chapter">
+                      <p><strong>SRM University AP ACM Student Chapter</strong></p>
+                    </div>
+                  </div>
 
-      <div class="col-sm-1"></div>
-      <div class="col-sm-2">
-        <div class="thumbnail">
-          <img src="assets/images/moz.png" alt="SRM AP MozClub">
-          <p><strong>SRM AP MozClub</strong></p>
-        </div>
-      </div>
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-2">
+                    <div class="thumbnail">
+                      <img src="assets/images/moz.png" alt="SRM AP MozClub">
+                      <p><strong>SRM AP MozClub</strong></p>
+                    </div>
+                  </div>
 
-      <div class="col-sm-1"></div>
-      <div class="col-sm-2">
-        <div class="thumbnail">
-          <img src="assets/images/pydata.png" alt="PyData Amaravati">
-          <p><strong>
-              <p>PyData Amaravati</p>
-            </strong></p>
-        </div>
-      </div>
-    </div><br>
+                  <div class="col-sm-2">
+                    <div class="thumbnail">
+                      <img src="assets/images/pydata.png" alt="PyData Amaravati">
+                      <p><strong>
+                        <p>PyData Amaravati</p>
+                      </strong></p>
+                    </div>
+                  </div>
+                </div><br>
 
-    <!-- Container (Contact Section) -->
-    <div id="contact" class="container-fluid bg-grey">
-      <h2 class="text-center">CONTACT</h2>
-      <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4">
-          <p>
-            <h2>Contact us and we'll get back to you within 24 hours</h2>
-            <p><span class="glyphicon glyphicon-map-marker"></span>
-              <font color="black"> SRM University, AP - Amaravati</font>
-            </p>
-            <p><span class="glyphicon glyphicon-phone"></span>
-              <font color="black"> +91 8699415122</font>
-            </p>
-            <p><span class="glyphicon glyphicon-envelope"></span>
-              <a href="mailto:hello@hacksrm.tech">
-                <font color="black"> hello@hacksrm.tech </font>
-              </a>
-            </p>
-        </div>
-      </div>
-      <a href="#myPage" title="To Top">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-      </a>
 
-    </div>
-    <script>
-      $(document).ready(function () {
-        // Add smooth scrolling to all links in navbar + footer link
-        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
+                <!-- Container (Contact Section) -->
+                <div id="contact" class="container-fluid bg-grey">
+                  <h2 class="text-center">CONTACT</h2>
+                  <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4">
+                      <p>
+                        <h2>Contact us and we'll get back to you within 24 hours</h2>
+                        <p><span class="glyphicon glyphicon-map-marker"></span>
+                          <font color="black"> SRM University, AP - Amaravati</font>
+                        </p>
+                        <p><span class="glyphicon glyphicon-phone"></span>
+                          <font color="black"> +91 8699415122</font>
+                        </p>
+                        <p><span class="glyphicon glyphicon-envelope"></span>
+                          <font color="black"> hacksrm2018@gmail.com</font>
+                        </p>
+                      </div>
 
-            // Store hash
-            var hash = this.hash;
+                    </div>
+                    <a href="#myPage" title="To Top">
+                      <span class="glyphicon glyphicon-chevron-up" style="font-size:24px"></span>
+                    </a>
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 900, function () {
+                  </div>
 
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            });
-          } // End if
-        });
 
-        $(window).scroll(function () {
-          $(".slideanim").each(function () {
-            var pos = $(this).offset().top;
 
-            var winTop = $(window).scrollTop();
-            if (pos < winTop + 600) {
-              $(this).addClass("slide");
-            }
-          });
-        });
-      })
-    </script>
+                  <!--- Scripts --->
 
-</body>
-<script src="assets/js/particles.js"></script>
-<script src="assets/js/app.js"></script>
 
-</html>
+
+                  <script>
+                  $(document).ready(function () {
+                    $("a[href='#myPage']").each(function(){
+                      $(this).click(function(){
+                        $('html,body').animate({ scrollTop: 0 }, 900);
+                        return false;
+                      });
+                    });
+
+                    $(window).scroll(function () {
+                      $(".slideanim").each(function () {
+                        var pos = $(this).offset().top;
+
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                          $(this).addClass("slide");
+                        }
+                      });
+                    });
+                  })
+                  </script>
+                  <script src="assets/js/particles.js"></script>
+
+                  </html>
