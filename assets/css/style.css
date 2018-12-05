@@ -324,6 +324,9 @@ footer .glyphicon {
 }
 
 @media screen and (max-width: 268px) {
+#demo-canvas {
+  opacity: 0.4;
+}
   .col-sm-4 {
     text-align: center;
     margin: 25px 0;
@@ -335,6 +338,9 @@ footer .glyphicon {
 }
 
 @media only screen and (max-width: 600px) {
+#demo-canvas {
+  opacity: 0.4;
+}
   canvas {
   display: block;
   vertical-align: bottom;
@@ -342,7 +348,7 @@ footer .glyphicon {
 
 /* ---- particles.js container ---- */
 #demo-canvas {
-  opacity: 0.7;
+  opacity: 0.4;
 }
 .large-header {
   position: absolute;
