@@ -28,7 +28,20 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js"></script>
   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<style>
+#stars {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 16rem;
+  opacity: 0.6;
+	height: 100vh;
+	z-index: 1;
+  pointer-events: none;
+}
+</style>
 
 </head>
 
@@ -56,6 +69,7 @@
     </div>
   </nav>
   <!-- ParticlesJs -->
+  <canvas id="stars" width="300" height="300"></canvas>
   <div id="large-header" class="large-header">
     <canvas id="demo-canvas" ></canvas>
   </div>  <div class="jumbotron text-center">
@@ -66,10 +80,11 @@
       <h3>KICKSTART | HACK | LEAD</h3>
     </p>
     <p>
-      <h3>December 2018 | SRM AMARAVATI | NEXT TECH LAB AP<h3>
+      <h3>FEBRUARY 2019 | SRM AMARAVATI | NEXT TECH LAB AP<h3>
       </p>
       <br>
       <p>
+        <!-- <h3>Registrations start on October 1, 2018</h3> -->
 
         <center><a href="https://www.hackerearth.com/" style="text-decoration: none; color: inherit"><button type="button" class="btn btn-success BTN-LG"> REGISTER NOW</button></center></a></center>
 
