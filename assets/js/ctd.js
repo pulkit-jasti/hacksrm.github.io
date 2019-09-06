@@ -21,8 +21,8 @@ function ShowTime(){
         }
 
         var time = day + ":" + hr + ':' + min + ':' + sec;
-        document.getElementById('MyDigitalTimer').innerText=time;
-        document.getElementById('MyDigitalTimer').textContent=time;
+        document.getElementById('clockdiv').innerText=time;
+        document.getElementById('clockdiv').textContent=time;
         setTimeout(ShowTime,1000);
       }
       ShowTime();
