@@ -30,6 +30,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js"></script>
   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="assets/js/counttimer.js"></script>
 <style>
 
 
@@ -39,7 +40,7 @@
   width: 100%;
   height: 16rem;
   opacity: 0.6;
-  height: 100vh;
+  height: 500vh;
   z-index: 1;
   pointer-events: none;
 }
@@ -56,10 +57,7 @@
   background-color: #0B1C33; 
 }
 
-.container {
-  color: #fff;
-  text-align: center;
-}
+
 
 h1 {
   font-weight: normal;
@@ -106,40 +104,40 @@ li span {
     </div>
   </nav>
   <!-- ParticlesJs -->
-  <canvas id="stars" width="300" height="300"></canvas>
+  <canvas id="stars"></canvas>
   <div id="large-header" class="large-header">
     <canvas id="demo-canvas" ></canvas>
-  </div>  <div class="jumbotron text-center">
-
-    <img src="assets/images/logo.png" class="logo"/>
-    <br>
+  </div><div class="jumbotron text-center">
+<canvas id="stars"></canvas>
+      <div id="large-header" class="large-header">
+        <canvas id="demo-canvas" ></canvas>
+      </div><div class="jumbotron text-center">
+    <img src="assets/images/logo.png" class="logo"/><br>
+    
     <p>
       <h3>KICKSTART | HACK | LEAD</h3>
     </p>
+
     <p>
-      <h3>SEPTEMBER 2019 | SRM AMARAVATI | NEXT TECH LAB AP<h3>
+      <h3>SEPTEMBER 2019 | SRM AMARAVATI | NEXT TECH LAB AP</h3>
       </p>
       <br>
       <p>
+      <center><a href="https://hacksrmapuniv.hackerearth.com/" style="text-decoration: none; color: inherit"><button type="button" class="btn btn-success BTN-LG"> REGISTER NOW</button></center></a></center>
+      
+      </p>
+      
+
+        <h1 id="head">Countdown to the ultimate hack:</h1>
+        <ul>
+          <li><span id="days"></span>days</li>
+          <li><span id="hours"></span>Hours</li>
+          <li><span id="minutes"></span>Minutes</li>
+          <li><span id="seconds"></span>Seconds</li>
+        </ul></div>
+    </div>
+
         <!-- <h3>Registrations start on October 1, 2018</h3> -->
-
-        <center><a href="https://hacksrmapuniv.hackerearth.com/" style="text-decoration: none; color: inherit"><button type="button" class="btn btn-success BTN-LG"> REGISTER NOW</button></center></a></center>
-
-      </div>
-      <div>
-      <script type="text/javascript" src="assets/js/counttimer.js"></script>
-      <div class="container">
-        <div class="Timer-1">
-            <h1 id="head">Countdown to the ultimate hack:</h1>
-            <ul>
-              <li><span id="days"></span>days</li>
-              <li><span id="hours"></span>Hours</li>
-              <li><span id="minutes"></span>Minutes</li>
-              <li><span id="seconds"></span>Seconds</li>
-            </ul>
-          </div>
-      </div>
-     
       <!-- Container (About Section) -->
       <div id="about" class="container-fluid bg-white" class="container-fluid text-center ">
         <div class="row">
