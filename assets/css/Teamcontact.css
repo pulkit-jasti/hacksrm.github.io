@@ -5,12 +5,11 @@ body{
   margin:0;
   padding:0;
 }
-h1{
-  position: absolute;
-  margin-top: -90px;
-  text-align: center;
-  width: 100%;
-  -webkit-animation:colorchange 9s infinite alternate;
+.Team-contact{
+  color: white;
+  background: linear-gradient(to left, #11171d, #2E8B57, #800080);
+  background-size: 400% 400%;
+  
 }
 
 .img-box-1{
