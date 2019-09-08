@@ -11,7 +11,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
-
   gtag('config', 'UA-126732353-1');
   </script>
 
@@ -32,8 +31,6 @@
   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="assets/js/counttimer.js"></script>
 <style>
-
-
 #stars {
   display: block;
   position: absolute;
@@ -55,7 +52,6 @@
 h1 {
   font-weight: normal;
 }
-
 li {
   display: inline-block;
   font-size: 1.5em;
@@ -63,12 +59,14 @@ li {
   padding: 1em;
   text-transform: uppercase;
 }
-
 li span {
   display: block;
   font-size: 4.5rem;
 }
-
+#Hack{
+  margin-top: 100px;
+  font-size: 50px;
+}
 </style>
 
 </head>
@@ -121,7 +119,7 @@ li span {
       </p>
       
 
-        <h1 id="head">Countdown to the ultimate hack:</h1>
+        <h1 class="text-center" id="Hack">Countdown to the ultimate hack:</h1>
         <ul>
           <li><span id="days"></span>days</li>
           <li><span id="hours"></span>Hours</li>
@@ -325,11 +323,9 @@ li span {
                         return false;
                       });
                     });
-
                     $(window).scroll(function () {
                       $(".slideanim").each(function () {
                         var pos = $(this).offset().top;
-
                         var winTop = $(window).scrollTop();
                         if (pos < winTop + 600) {
                           $(this).addClass("slide");
