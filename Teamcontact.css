@@ -7,7 +7,7 @@ body{
 }
 .Team-contact{
   color: white;
-  background: linear-gradient(to left, #11171d, #2E8B57, #800080);
+  background: linear-gradient(to left,#FF69B4, #11171d, #2E8B57, #800080);
   background-size: 400% 400%;
   
 }
@@ -70,7 +70,7 @@ body{
 }
 .box{
   border-bottom: 3px solid #fff;
-  background-color: #0020C2;
+  
 }
 .text {
     padding: 30px 0;
