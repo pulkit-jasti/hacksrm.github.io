@@ -9,6 +9,8 @@ body{
   color: white;
   background: linear-gradient(to left, #11171d, #2E8B57, #800080);
   background-size: 400% 400%;
+  margin:0;
+  padding:0;
   
 }
 
