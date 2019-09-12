@@ -16,7 +16,6 @@ body {
   line-height: 1.8;
   color: #818181;
 }
-
 h2 {
   font-size: 24px;
   color: #303030;
@@ -45,7 +44,7 @@ h4 {
 .jumbotron {
   min-height: 100vh;
   height: 100%;
-  color: #000000;
+  color: #fff;
   background-size: 400% 400%;
   background: transparent!important;
   background-color: #E9ECEF;
