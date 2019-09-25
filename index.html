@@ -11,12 +11,11 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
+
+
     gtag('js', new Date());
     gtag('config', 'UA-126732353-1');
   </script>
-
-  <link rel="icon" type="image/png" href="favicon.png">
-  <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="HackSRM 2018" />
@@ -24,6 +23,17 @@
         content="HackSRM is a premium student led national level hackathon held in India that aims to gather the great student minds under one roof and solve potential real world problem through technology under 36 hours. " />
   <meta name="keywords"
         content="HackSRM, Hackathon, SRM, SRM AP, Hackathon India, UC Berkeley, MIT, Next Tech, IGDC">
+  <!-- Meta Tags -->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,600&display=swap" rel="stylesheet">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap CSS File -->
+ 
+  <!-- Main Stylesheet File -->
+  <link href="css/schedule.css" rel="stylesheet">
   <meta property="og:url" content="http://hacksrm.github.io" />
   <meta property="og:image" content="assets/images/cover-1.png" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -35,9 +45,10 @@
   <link href="Teamcontact.css" rel="stylesheet" type="text/css">
   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
   <link href="assets/css/TeamContact.css" rel="stylesheet" type="text/css">
+  <link href="css/SocialMedia.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" media="mediatype only (expressions)" href="screen.css">
   <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
-<link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
   <script type="text/javascript" src="assets/js/counttimer.js"></script>
   <style>
     #stars {
@@ -123,7 +134,7 @@
     </div>
   </nav>
   <!-- ParticlesJs -->
-  <canvas id="stars" id="demo-canvas"></canvas>
+  <canvas id="stars" id="demo-canvas" ></canvas>
   <div id="large-header" class="large-header">
     <canvas id="demo-canvas" id="stars"></canvas>
   </div>
@@ -188,6 +199,242 @@
       </div>
     </div>
   </div>
+  <!--==========================
+      Schedule Section
+    ============================-->
+    <div class="justify-content-center" class="container-fluid text-center" >
+    <section id="schedule" >
+      <div class="container wow fadeInUp" class="bgSchedule">
+        <div class="section-header">
+          <h2>Schedule</h2>
+          <p>Tentative hackathon schedule</p>
+        </div>
+        <div class="schedule23">
+        <ul class="nav nav-tabs" role="tablist" class="justify-content-center" >
+          <li class="nav-item"> <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab" >Day 1</a>
+          </li>
+          <li class="nav-item"> <a class="nav-link" href="#day-2" role="tab" data-toggle="tab" >Day 2</a>
+          </li>
+        </ul>
+        </div>
+        <div class="tab-content row justify-content-center">
+          <!-- Schdule Day 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active in" id="day-1">
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>10:00 AM - 12:00 PM</time>
+              </div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-2 schedule-item-icon"> <i class="material-icons md-54">how_to_reg</i>
+                  </div>
+                  <div class="col-12">
+                    <h4>Registration</h4>
+                    <p>On-site distribution of ID cards and food coupons to the registered teams.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>12:00 PM - 01:00 PM</time>
+              </div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-2 schedule-item-icon"> <i class="material-icons md-54">local_dining</i>
+                  </div>
+                  <div class="col-9 ">
+                    <h4>Lunch</h4>
+                    <p>Lunch catered by campus mess.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>01:00 PM Onwards</time>
+              </div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-2 schedule-item-icon"> <i class="material-icons md-54">event</i>
+                  </div>
+                  <div class="col-12">
+                    <h4>Hackathon Begins</h4>
+                    <p>Brief introduction about rules and regulations and start brainstorm, implement ideas, code the application.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>01:30 PM - 04:00 PM</time>
+              </div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-2 schedule-item-icon"> <i class="material-icons md-54">wb_incandescent</i>
+                  </div>
+                  <div class="col-9">
+                    <h4>First Commit</h4>
+                    <p>Hackers should submit their finalised idea and work for the rest of the hackathon.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>04:00 PM - 08:00 PM</time>
+              </div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-2 schedule-item-icon"> <i class="material-icons md-54">free_breakfast</i>
+                  </div>
+                  <div class="col-9">
+                    <h4>Refreshments / Hack</h4>
+                    <p>Snacks will be served and continue hacking.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>08:00 PM - 09:00 PM</time>
+              </div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-2 schedule-item-icon"> <i class="material-icons md-54">local_dining</i>
+                  </div>
+                  <div class="col-9 ">
+                    <h4>Dinner</h4>
+                    <p>Dinner catered by campus mess.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>09:00 PM - 02:00 AM</time>
+              </div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-2 schedule-item-icon"> <i class="material-icons md-54">music_note</i>
+                  </div>
+                  <div class="col-9">
+                    <h4>Amusement Activities</h4>
+                    <p>Work along with Games, Events and Snacks.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- End Schdule Day 1 -->
+          <!-- Schdule Day 2 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>02:00 AM - 07:30 AM</time>
+              </div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-2 schedule-item-icon"> <i class="material-icons md-54">wb_incandescent</i>
+                  </div>
+                  <div class="col-9">
+                    <h4>Second Commit</h4>
+                    <p>Hackers are required to submit their performed code.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>07:30 AM - 08:30 AM</time>
+              </div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-2 schedule-item-icon"> <i class="material-icons md-54">free_breakfast</i>
+                  </div>
+                  <div class="col-9">
+                    <h4>Breakfast</h4>
+                    <p>Breakfast will be served by campus mess.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>08:30 AM - 09:30 AM</time>
+              </div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-2 schedule-item-icon"> <i class="material-icons md-54">assignment_turned_in</i>
+                  </div>
+                  <div class="col-9">
+                    <h4>Evaluation</h4>
+                    <p>Inspection by judges and teams are finalized.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>09:30 AM - 01:00 PM</time>
+              </div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-2 schedule-item-icon"> <i class="material-icons md-54">wb_incandescent</i>
+                  </div>
+                  <div class="col-9">
+                    <h4>Final Commit</h4>
+                    <p>Teams make it to the pitching round.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2 time1">
+                <time>01:00 PM - 03:30 PM</time>
+              </div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-2 schedule-item-icon"> <i class="material-icons md-54">navigation</i>
+                  </div>
+                  <div class="col-9">
+                    <h4>Pitch Up</h4>
+                    <p>Pitching up ideas and each team is given 5 minutes to present.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2">
+                <time>03:00 PM Onwards</time>
+              </div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-2 schedule-item-icon"> <i class="material-icons md-54">star</i>
+                  </div>
+                  <div class='col-9'>
+                    <h4>Announcing Winners</h4>
+                    <p>Announcement of winners for this hack.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Schdule Day 2 -->
+        </div>
+      </div>
+    </div>
+    </section>
+    </div>
+  <!-- #footer --> <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
   <div id="SPONSORS" class="container-fluid">
     <div class="text-center">
       <h2 style="font-size: 50  px">SPONSORS</h2>
