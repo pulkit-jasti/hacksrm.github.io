@@ -1,9 +1,37 @@
+
 body{
   font: 400 15px Lato, sans-serif;
+  font-size:10vw;
   line-height: 1.8;
   color: #818181;
   margin:0;
   padding:0;
+}
+@media only screen and (min-width: 601px) {
+  div.Team-contact {
+    font-size: 10px;
+    padding: 0px;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  div.Team-contact {
+    font-size: 10px;
+    padding: 0px;
+  }
+}
+
+.main {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
 .Team-contact{
   color: white;
@@ -73,6 +101,7 @@ body{
   
 }
 .text {
+    font-size:10vw;
     padding: 30px 0;
     width: auto;
     height: auto;
