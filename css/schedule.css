@@ -219,7 +219,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-top: 15px;
   padding-bottom: 15px;
   transition: background-color ease-in-out 0.3s;
-  width: 135%;
+  width: relative;
 }
 #schedule .schedule-item:hover {
   background-color: #E6E6FA;
