@@ -6,7 +6,7 @@ let countDown = new Date('Sep 28, 2019 00:00:00').getTime(),
     x = setInterval(function() {
 
       let now = new Date().getTime(),
-          /*distance = countDown - now;*/
+          distance = 0 // countDown - now;
 
         
         document.getElementById('hours').innerText = 0//Math.floor((distance % (day)) / (hour)),
